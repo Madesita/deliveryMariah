@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">deliveryMariah</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Ingreso</string>
+</resources>
