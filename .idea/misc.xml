@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/user/AndroidStudioProjects/deliveryMariah/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/deliveryMariah/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1445" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/deliveryMariah/app/src/main/res/drawable/contorno.xml" value="0.14" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/deliveryMariah/app/src/main/res/drawable/contorno2.xml" value="0.1065" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/deliveryMariah/app/src/main/res/drawable/contorno3.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/deliveryMariah/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.1445" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/deliveryMariah/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1445" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/deliveryMariah/app/src/main/res/drawable/ic_usuario.xml" value="0.1445" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/deliveryMariah/app/src/main/res/drawable/smile.xml" value="0.1855" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/deliveryMariah/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
   </component>

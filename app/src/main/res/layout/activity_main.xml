@@ -3,8 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/contorno2"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/text_user_label"
@@ -14,19 +16,23 @@
         android:layout_marginTop="@dimen/top_border"
         android:layout_marginRight="@dimen/border_left_right"
         android:text="@string/user"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/white"
         android:textSize="@dimen/text_height"
         app:layout_constraintTop_toTopOf="parent"
-
         />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/contorno"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:drawableLeft="@drawable/ic_usuario"
         android:hint="@string/user"
         android:inputType="textPersonName"
+        android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="@id/text_user_label"
         app:layout_constraintRight_toRightOf="@id/text_user_label"
         app:layout_constraintTop_toBottomOf="@id/text_user_label"
@@ -34,24 +40,29 @@
 
 
     <EditText
+
         android:id="@+id/editTextTextPassword"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/contorno"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:ems="10"
         android:inputType="textPassword"
         android:hint="@string/password"
-        android:textSize="@dimen/text_height"
-        android:layout_marginTop="@dimen/text_height"
+        android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="@id/text"
         app:layout_constraintRight_toRightOf="@id/text"
-        app:layout_constraintTop_toBottomOf="@id/text"/>
+        app:layout_constraintTop_toBottomOf="@id/text"
+        android:layout_marginTop="@dimen/text_height"/>
 
     <TextView
         android:id="@+id/text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/password"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/white"
         android:textSize="@dimen/text_height"
         android:layout_marginTop="@dimen/text_height"
         app:layout_constraintLeft_toLeftOf="@id/editTextTextPersonName"
@@ -61,17 +72,43 @@
         />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/angry_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/contorno2"
         android:layout_marginTop="@dimen/text_height"
-        android:textColor="@color/teal_200"
         app:layout_constraintLeft_toLeftOf="@id/editTextTextPassword"
         app:layout_constraintRight_toRightOf="@id/editTextTextPassword"
         app:layout_constraintTop_toBottomOf="@id/editTextTextPassword"
+        android:text="I N G R E S A R"
+        android:shadowColor="#000000"
+        android:textColor="#FFFFFF"
 
         />
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/ic_gatito"
+        android:tint="@color/black"
+        android:backgroundTint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="UseAppTint"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="B I E N V E N I D O"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/text_height"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="50dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
