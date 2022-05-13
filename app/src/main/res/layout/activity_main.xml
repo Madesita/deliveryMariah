@@ -3,10 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/fondo7"
+    android:background="@drawable/fondo8"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
 
     <TextView
         android:id="@+id/text_user_label"
@@ -21,44 +20,6 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="match_parent"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/contorno"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:ems="10"
-        android:drawableLeft="@drawable/ic_usuario"
-        android:hint="@string/user"
-        android:inputType="textPersonName"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="@id/text_user_label"
-        app:layout_constraintRight_toRightOf="@id/text_user_label"
-        app:layout_constraintTop_toBottomOf="@id/text_user_label"
-        android:layout_marginTop="@dimen/text_height"/>
-
-
-    <EditText
-
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/contorno"
-        android:drawableLeft="@drawable/ic_baseline_lock_24"
-        android:ems="10"
-        android:textColor="@color/white"
-        android:inputType="textPassword"
-        android:hint="@string/password"
-        android:textSize="20sp"
-        app:layout_constraintLeft_toLeftOf="@id/text"
-        app:layout_constraintRight_toRightOf="@id/text"
-        app:layout_constraintTop_toBottomOf="@id/text"
-        android:layout_marginTop="@dimen/text_height"/>
-
     <TextView
         android:id="@+id/text"
         android:layout_width="0dp"
@@ -67,9 +28,9 @@
         android:textColor="@color/white"
         android:textSize="@dimen/text_height"
         android:layout_marginTop="@dimen/text_height"
-        app:layout_constraintLeft_toLeftOf="@id/editTextTextPersonName"
-        app:layout_constraintRight_toRightOf="@id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName"
+        app:layout_constraintLeft_toLeftOf="@id/editTextUserName"
+        app:layout_constraintRight_toRightOf="@id/editTextUserName"
+        app:layout_constraintTop_toBottomOf="@id/editTextUserName"
 
         />
     <Button
@@ -98,7 +59,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:src="@drawable/ic_gatito"
-        android:tint="@color/black"
+        android:tint="@color/white"
         android:backgroundTint="@color/white"
         app:layout_constraintLeft_toLeftOf="parent"
         tools:ignore="UseAppTint"/>
@@ -120,7 +81,59 @@
         app:layout_constraintBottom_toTopOf="@id/text_user_label"
         android:layout_marginBottom="@dimen/text_height"
         />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextUserName"
+        style="@style/the_inputs1"
+        android:hint="@string/user"
+        android:layout_marginTop="@dimen/text_height"
+        app:startIconContentDescription="@android:string/copyUrl"
+        app:startIconDrawable="@drawable/ic_usuario"
+        app:startIconTint="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/text_user_label"
+        app:layout_constraintRight_toRightOf="@id/text_user_label"
+        app:layout_constraintTop_toBottomOf="@id/text_user_label"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/editTextUserName2"
+            android:background="@drawable/contorno"
+            style="@style/the_inputs"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextTextPassword"
+        style="@style/the_passwords"
+        android:hint="@string/password"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="@color/white"
+        app:endIconTint="@color/white"
+        app:startIconContentDescription="@android:string/copyUrl"
+        app:layout_constraintLeft_toLeftOf="@id/text"
+        app:layout_constraintRight_toRightOf="@id/text"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        android:layout_marginTop="@dimen/text_height"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTextPassword2"
+            android:background="@drawable/contorno"
+            style="@style/the_passwords"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
 
 
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

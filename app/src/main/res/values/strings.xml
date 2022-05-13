@@ -3,6 +3,9 @@
     <string name="user">Usuario</string>
     <string name="password">Contraseña</string>
     <string name="login">Ingreso</string>
+    <string name="apellido">Apellido</string>
+    <string name="telefono">Telefono</string>
+    <string name="email">Correo</string>
     <string name="textoi">L O G I N</string>
 
 </resources>
