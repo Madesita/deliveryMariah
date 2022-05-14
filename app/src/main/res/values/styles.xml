@@ -8,7 +8,7 @@
         <item name="titleTextColor">@android:color/holo_blue_dark</item>
         <item name="layout_constraintRight_toRightOf">@id/textView</item>
         <item name="layout_constraintLeft_toLeftOf">@id/textView</item>
-    </style>
+    </style> 
 
     <style name="the_passwords" parent="the_inputs">
         <item name="android:textColorHint">@color/purple_200</item>

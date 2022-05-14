@@ -7,6 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
     <TextView
         android:id="@+id/text_user_label"
         android:layout_width="match_parent"
@@ -49,20 +56,20 @@
         android:text="I N G R E S A R"
         android:shadowColor="#000000"
         android:textColor="#FFFFFF"
-
         />
-
     <ImageView
         android:id="@+id/imageButton"
-        android:layout_width="200dp"
-        android:layout_height="220dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         android:src="@drawable/ic_gatito"
         android:tint="@color/white"
         android:backgroundTint="@color/white"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:ignore="UseAppTint"/>
+        tools:ignore="UseAppTint"
+        android:layout_marginTop="70dp"
+        app:layout_constraintLeft_toLeftOf="@id/button"
+        app:layout_constraintRight_toRightOf="@id/button"
+        app:layout_constraintTop_toBottomOf="@id/button"/>
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
@@ -120,7 +127,7 @@
         android:layout_marginTop="@dimen/text_height"
 
         >
-        <com.google.android.material.textfield.TextInputEditText
+           <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextTextPassword2"
             android:background="@drawable/contorno"
             style="@style/the_passwords"
@@ -128,12 +135,10 @@
             android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
-
-        </com.google.android.material.textfield.TextInputEditText>
-
-
-
+               >
+           </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
