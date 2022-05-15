@@ -6,7 +6,6 @@
     android:background="@drawable/imag1"
     android:layout_height="match_parent"
     tools:context=".interface_user.Principal">
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -19,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="70dp"
         android:layout_marginRight="@dimen/border_left_right"
         android:text="@string/user"
         android:textColor="@color/white"
@@ -31,7 +30,7 @@
         style="@style/the_inputs"
         android:hint="@string/user"
         app:startIconContentDescription="@android:string/copyUrl"
-        app:startIconDrawable="@drawable/ic_usuario"
+        app:startIconDrawable="@drawable/ic_baseline_verified_user_24"
         app:startIconTint="@color/white"
         android:layout_marginTop="10dp"
         app:layout_constraintLeft_toLeftOf="@id/text_user_label1"
@@ -49,13 +48,48 @@
             >
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/text_user_label2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginRight="@dimen/border_left_right"
+                android:text="@string/nombre"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_height"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextUserName2"
+                style="@style/the_inputs"
+                android:hint="@string/nombre"
+                app:startIconContentDescription="@android:string/copyUrl"
+                app:startIconDrawable="@drawable/ic_usuario"
+                app:startIconTint="@color/white"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="@id/text_user_label2"
+                app:layout_constraintRight_toRightOf="@id/text_user_label2"
+                app:layout_constraintTop_toBottomOf="@id/text_user_label2"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name2"
+                    android:background="@drawable/contorno2"
+                    style="@style/the_inputs"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
+            <TextView
         android:id="@+id/text_user_label3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="290dp"
         android:layout_marginRight="@dimen/border_left_right"
         android:text="@string/apellido"
         android:textColor="@color/white"
@@ -95,7 +129,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="400dp"
         android:layout_marginRight="@dimen/border_left_right"
         android:text="@string/telefono"
         android:textColor="@color/white"
@@ -131,7 +165,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="510dp"
         android:layout_marginRight="@dimen/border_left_right"
         android:text="@string/email"
         android:textColor="@color/white"
@@ -170,7 +204,7 @@
         android:background="@drawable/contorno2"
         android:paddingTop="0dp"
         android:paddingBottom="0dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintLeft_toLeftOf="@id/editTextUserName5"
         app:layout_constraintRight_toRightOf="@id/editTextUserName5"
         app:layout_constraintTop_toBottomOf="@id/editTextUserName5"
