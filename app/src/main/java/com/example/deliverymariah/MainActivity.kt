@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         views.button.setOnClickListener{
 
             val userText=views.editTextUserName2.text.toString()
-            val passwordText=views.editTextTextPassword2.text.toString()
+            val passwordText=views.Password2.text.toString()
 
             userText?.let {
                 passwordText?.let { itp ->

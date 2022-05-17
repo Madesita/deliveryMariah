@@ -7,6 +7,9 @@
     <string name="apellido">Apellido</string>
     <string name="telefono">Telefono</string>
     <string name="email">Correo</string>
-    <string name="textoi">L O G I N</string>
+    <string name="textoi">Bienvenidos</string>
+    <string name="aceptar">ACEPTAR</string>
+    <string name="Formulario">Formulario</string>
+
 
 </resources>
