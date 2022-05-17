@@ -5,7 +5,8 @@
         <item name="android:layout_width">@dimen/zero</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColorHint">@color/teal_200</item>
-        <item name="tint">@color/purple_200</item>
+        <item name="tint">@color/white</item>
+        <item name="android:textSize">20dp</item>
         <item name="titleTextColor">@android:color/holo_blue_dark</item>
         <item name="android:textColor">@color/white</item>
         <item name="layout_constraintRight_toRightOf">@id/text_user_label</item>

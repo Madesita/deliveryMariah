@@ -4,10 +4,13 @@
     <dimen name="border_left_right">20dip</dimen>
     <dimen name="text_height">25dip</dimen>
     <dimen name="marginLeft">20dip</dimen>
-    <dimen name="layout_marginTop">40dip</dimen>
+    <dimen name="textsize">30dip</dimen>
+    <dimen name="layout_marginTop">50dip</dimen>
     <dimen name="layout_marginToptext">30dip</dimen>
-    <dimen name="layout_marginTopview">120dip</dimen>
+    <dimen name="layout_marginTopgato">70dip</dimen>
+    <dimen name="layout_marginTopview">80dip</dimen>
     <dimen name="marginRight">20dip</dimen>
+    <dimen name="layout_heightg">140dip</dimen>
     <dimen name="zero" >0dp</dimen>
 
 

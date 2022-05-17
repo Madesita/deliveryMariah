@@ -16,12 +16,11 @@
             android:orientation="vertical" >
 
     <Button
+        style="@style/the_inputs"
         android:id="@+id/button"
-        android:layout_width="@dimen/zero"
-        android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/marginLeft"
         android:layout_marginRight="@dimen/marginRight"
-        android:background="@drawable/contorno2"
+        android:background="@drawable/botones"
         android:layout_marginTop="@dimen/layout_marginTop"
         app:layout_constraintLeft_toLeftOf="@id/TextPassword"
         app:layout_constraintRight_toRightOf="@id/TextPassword"
@@ -31,10 +30,10 @@
     <ImageView
         style="@style/the_inputs"
         android:id="@+id/imageButton"
-        android:layout_height="150dp"
+        android:layout_height="@dimen/layout_heightg"
         app:layout_constraintBottom_toBottomOf="parent"
         android:src="@drawable/ic_gatito"
-        android:layout_marginTop="@dimen/layout_marginTopview"
+        android:layout_marginTop="@dimen/layout_marginTopgato"
         app:layout_constraintLeft_toLeftOf="@id/button"
         app:layout_constraintRight_toRightOf="@id/button"
         app:layout_constraintTop_toBottomOf="@id/button"/>
@@ -44,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/marginLeft"
-        android:layout_marginTop="@dimen/layout_marginTop"
+        android:layout_marginTop="@dimen/layout_marginTopview"
         android:layout_marginRight="@dimen/border_left_right"
         android:text="@string/textoi"
         android:textAlignment="center"
@@ -81,19 +80,18 @@
         style="@style/the_passwords"
         android:hint="@string/password"
         app:startIconDrawable="@drawable/ic_baseline_lock_24"
-
         app:endIconTint="@color/white"
         app:startIconContentDescription="@string/password"
         app:layout_constraintLeft_toLeftOf="@id/editTextUserName"
         app:layout_constraintRight_toRightOf="@id/editTextUserName"
         app:layout_constraintTop_toBottomOf="@id/editTextUserName"
-        android:layout_marginTop="@dimen/text_height"
+        android:layout_marginTop="@dimen/layout_marginTop"
         >
            <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/Password2"
             android:background="@drawable/contorno"
             style="@style/the_passwords"
-               android:layout_marginTop="@dimen/layout_marginTop"
+               android:layout_marginTop="@dimen/layout_marginToptext"
             android:inputType="textPassword"
             android:textColor="@color/white"
             android:layout_width="match_parent"
