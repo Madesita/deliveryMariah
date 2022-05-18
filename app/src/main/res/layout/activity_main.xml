@@ -33,7 +33,7 @@
         android:id="@+id/imageButton"
         android:layout_height="@dimen/layout_heightg"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/ic_gatito"
+        android:src="@drawable/gato2"
         android:layout_marginTop="@dimen/layout_marginTopgato"
         app:layout_constraintLeft_toLeftOf="@id/button"
         app:layout_constraintRight_toRightOf="@id/button"

@@ -29,6 +29,11 @@ class MainActivity : AppCompatActivity() {
                     {
                         goToPrincipal(userText)
                     }
+                    else
+                    {
+                        Toast.makeText(getApplicationContext(),"Usuario o Contraseña Incorrectos",Toast.LENGTH_SHORT).show();
+                    }
+
                 }
             }
         }
