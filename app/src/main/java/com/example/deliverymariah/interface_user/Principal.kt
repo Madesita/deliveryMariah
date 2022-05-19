@@ -19,7 +19,7 @@ class Principal : AppCompatActivity() {
     {
         var  userName= intent.getStringExtra("name_user")
         views.name1.setText(userName)
-        var  userPassword= intent.getStringExtra("name_Password")
-        views.name2.setText(userPassword)
+        //var  userPassword= intent.getStringExtra("name_Password")
+        //views.name2.setText(userPassword)
     }
 }

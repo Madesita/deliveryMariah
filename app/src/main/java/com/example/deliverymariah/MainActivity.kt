@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         views.button.setOnClickListener{
 
             val userText=views.editTextUserName2.text.toString()
-            val passwordText=views.editTextTextPassword2.text.toString()
+            val passwordText=views.Password2.text.toString()
 
             userText?.let {
                 passwordText?.let { itp ->
@@ -29,6 +29,11 @@ class MainActivity : AppCompatActivity() {
                     {
                         goToPrincipal(userText)
                     }
+                    else
+                    {
+                        Toast.makeText(getApplicationContext(),"Usuario o Contraseña Incorrectos",Toast.LENGTH_SHORT).show();
+                    }
+
                 }
             }
         }
@@ -37,7 +42,6 @@ class MainActivity : AppCompatActivity() {
     {
         var  intent= Intent(this, Principal::class.java)
         intent.putExtra( "name_user",userText)
-        intent.putExtra( "name_Password",userText)
         startActivity(intent)
     }
 }
