@@ -3,100 +3,69 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:theme="@style/ThemeOverlay.Material3.DynamicColors.Light"
-    android:background="@drawable/fondo8"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo8"
+    android:theme="@style/ThemeOverlay.Material3.DynamicColors.Light"
     tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical" >
-
-    <Button
-        style="@style/the_inputs"
-        android:id="@+id/button"
-        android:layout_marginLeft="@dimen/marginLeft"
-        android:layout_marginRight="@dimen/marginRight"
-        android:background="@drawable/botones"
-        android:layout_marginTop="@dimen/layout_marginTop"
-        app:layout_constraintLeft_toLeftOf="@id/TextPassword"
-        app:layout_constraintRight_toRightOf="@id/TextPassword"
-        app:layout_constraintTop_toBottomOf="@id/TextPassword"
-        android:text="@string/aceptar"
-        />
-    <ImageView
-        style="@style/the_inputs"
-        android:id="@+id/imageButton"
-        android:layout_height="@dimen/layout_heightg"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/gato2"
-        android:layout_marginTop="@dimen/layout_marginTopgato"
-        app:layout_constraintLeft_toLeftOf="@id/button"
-        app:layout_constraintRight_toRightOf="@id/button"
-        app:layout_constraintTop_toBottomOf="@id/button"/>
-    <TextView
-        style="@style/the_inputs"
-        android:id="@+id/text_user_label"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/marginLeft"
-        android:layout_marginTop="@dimen/layout_marginTopview"
-        android:layout_marginRight="@dimen/border_left_right"
-        android:text="@string/textoi"
-        android:textAlignment="center"
-        android:textSize="@dimen/text_height"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/editTextUserName"
-        style="@style/the_inputs"
-        android:hint="@string/user"
-        android:layout_marginTop="@dimen/text_height"
-        app:startIconContentDescription="@string/user"
-        app:startIconDrawable="@drawable/ic_usuario"
-        app:layout_constraintLeft_toLeftOf="@id/text_user_label"
-        app:layout_constraintRight_toRightOf="@id/text_user_label"
-        app:layout_constraintTop_toBottomOf="@id/text_user_label"
-        >
-        <com.google.android.material.textfield.TextInputEditText
-           style="@style/the_inputs"
-            android:id="@+id/editTextUserName2"
-            android:background="@drawable/contorno"
-            android:layout_marginTop="@dimen/layout_marginTop"
-            android:inputType="textPersonName"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
-        </com.google.android.material.textfield.TextInputEditText>
-    </com.google.android.material.textfield.TextInputLayout>
+            android:orientation="vertical">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/TextPassword"
-        style="@style/the_passwords"
-        android:hint="@string/password"
-        app:startIconDrawable="@drawable/ic_baseline_lock_24"
-        app:endIconTint="@color/white"
-        app:startIconContentDescription="@string/password"
-        app:layout_constraintLeft_toLeftOf="@id/editTextUserName"
-        app:layout_constraintRight_toRightOf="@id/editTextUserName"
-        app:layout_constraintTop_toBottomOf="@id/editTextUserName"
-        android:layout_marginTop="@dimen/layout_marginTop"
-        >
-           <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/Password2"
-            android:background="@drawable/contorno"
-            style="@style/the_passwords"
-               android:layout_marginTop="@dimen/layout_marginToptext"
-            android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-               >
-           </com.google.android.material.textfield.TextInputEditText>
-    </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/button"
+                style="@style/boton1"
+                android:text="@string/aceptar"
+                app:layout_constraintLeft_toLeftOf="@id/TextPassword"
+                app:layout_constraintRight_toRightOf="@id/TextPassword"
+                app:layout_constraintTop_toBottomOf="@id/TextPassword" />
+
+            <TextView
+                android:id="@+id/text_user_label"
+                style="@style/the_inputs"
+                android:text="@string/textoi"
+                android:textAlignment="center"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextUserName"
+                style="@style/inputs2"
+                android:hint="@string/user"
+                app:layout_constraintLeft_toLeftOf="@id/text_user_label"
+                app:layout_constraintRight_toRightOf="@id/text_user_label"
+                app:layout_constraintTop_toBottomOf="@id/text_user_label"
+                app:startIconContentDescription="@string/user"
+                app:startIconDrawable="@drawable/ic_usuario">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextUserName2"
+                    style="@style/t1"
+                    android:inputType="textPersonName"
+
+                    ></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextPassword"
+                style="@style/inputs2"
+                android:hint="@string/password"
+                app:layout_constraintLeft_toLeftOf="@id/editTextUserName"
+                app:layout_constraintRight_toRightOf="@id/editTextUserName"
+                app:layout_constraintTop_toBottomOf="@id/editTextUserName"
+                app:startIconContentDescription="@string/password"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Password2"
+                    style="@style/the_passwords"
+                    android:inputType="textPassword"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

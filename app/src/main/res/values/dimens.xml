@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="top_border">120dip</dimen>
+    <dimen name="top_border">12dip</dimen>
     <dimen name="border_left_right">20dip</dimen>
     <dimen name="text_height">25dip</dimen>
-    <dimen name="marginLeft">20dip</dimen>
-    <dimen name="textsize">30dip</dimen>
-    <dimen name="layout_marginTop">50dip</dimen>
-    <dimen name="layout_marginToptext">30dip</dimen>
-    <dimen name="layout_marginTopgato">82dip</dimen>
+    <dimen name="marginLeft">10dip</dimen>
+    <dimen name="layout_marginTop">20dip</dimen>
+    <dimen name="layout_marginToptext">20dip</dimen>
+    <dimen name="layout_marginTopgato">88dip</dimen>
     <dimen name="layout_marginTopview">80dip</dimen>
-    <dimen name="marginRight">20dip</dimen>
-    <dimen name="layout_heightg">140dip</dimen>
-    <dimen name="zero" >0dp</dimen>
+    <dimen name="marginRight">20dp</dimen>
+
+
 
 
 
