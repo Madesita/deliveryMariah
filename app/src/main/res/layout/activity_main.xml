@@ -18,8 +18,8 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button"
                 style="@style/boton1"
+                android:id="@+id/button"
                 android:text="@string/aceptar"
                 app:layout_constraintLeft_toLeftOf="@id/TextPassword"
                 app:layout_constraintRight_toRightOf="@id/TextPassword"
@@ -47,8 +47,9 @@
                     android:id="@+id/editTextUserName2"
                     style="@style/t1"
                     android:inputType="textPersonName"
+                    >
 
-                    ></com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -62,9 +63,10 @@
                 app:startIconDrawable="@drawable/ic_baseline_lock_24">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/Password2"
                     style="@style/the_passwords"
-                    android:inputType="textPassword"></com.google.android.material.textfield.TextInputEditText>
+                    android:id="@+id/Password2"
+                    android:inputType="textPassword">
+                </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

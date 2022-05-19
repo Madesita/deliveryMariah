@@ -17,7 +17,7 @@
         >
 
         <TextView
-            style="@style/the_inputs"
+            style="@style/inputs2"
             android:id="@+id/text_user_label1"
             android:textAlignment="center"
             app:layout_constraintTop_toTopOf="parent"
@@ -112,7 +112,7 @@
 
         <Button
             android:id="@+id/button"
-            style="@style/boton1"
+            style="@style/boton2"
             app:layout_constraintLeft_toLeftOf="@id/editTextUserName5"
             app:layout_constraintRight_toRightOf="@id/editTextUserName5"
             app:layout_constraintTop_toBottomOf="@id/editTextUserName5"

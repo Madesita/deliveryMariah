@@ -26,11 +26,17 @@
         <item name="android:background">@drawable/contorno3</item>
         <item name="android:layout_marginRight">50dp</item>
         <item name="android:layout_marginLeft">50dp</item>
-        <item name="android:layout_marginTop">88dp</item>
+        <item name="android:layout_marginTop">90dp</item>
+    </style>
+    <style name="boton2" parent="the_inputs">
+        <item name="android:background">@drawable/contorno3</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginTop">50dp</item>
     </style>
     <style name="t1" parent="the_inputs">
         <item name="android:background">@drawable/contorno</item>
-        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
     </style>
     <style name="the_passwords" parent="t1">
         <item name="endIconMode">password_toggle</item>
