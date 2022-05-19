@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo8"
+    android:background="@drawable/fondo1"
     android:theme="@style/ThemeOverlay.Material3.DynamicColors.Light"
     tools:context=".MainActivity">
 
@@ -17,6 +17,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/text_user_label"
+                style="@style/the_inputs"
+                android:src="@drawable/uide"
+                android:textAlignment="center"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"/>
+
             <Button
                 style="@style/boton1"
                 android:id="@+id/button"
@@ -25,13 +33,6 @@
                 app:layout_constraintRight_toRightOf="@id/TextPassword"
                 app:layout_constraintTop_toBottomOf="@id/TextPassword" />
 
-            <TextView
-                android:id="@+id/text_user_label"
-                style="@style/the_inputs"
-                android:text="@string/textoi"
-                android:textAlignment="center"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="MissingConstraints" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/editTextUserName"
@@ -45,7 +46,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editTextUserName2"
-                    style="@style/t1"
+                    style="@style/t2"
                     android:inputType="textPersonName"
                     >
 
@@ -54,14 +55,13 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TextPassword"
-                style="@style/inputs2"
+                style="@style/the_passwords2"
                 android:hint="@string/password"
                 app:layout_constraintLeft_toLeftOf="@id/editTextUserName"
                 app:layout_constraintRight_toRightOf="@id/editTextUserName"
                 app:layout_constraintTop_toBottomOf="@id/editTextUserName"
                 app:startIconContentDescription="@string/password"
                 app:startIconDrawable="@drawable/ic_baseline_lock_24">
-
                 <com.google.android.material.textfield.TextInputEditText
                     style="@style/the_passwords"
                     android:id="@+id/Password2"

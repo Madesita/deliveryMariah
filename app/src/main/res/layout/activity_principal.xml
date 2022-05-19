@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/imag1"
+    android:background="@drawable/vect2"
     tools:context=".interface_user.Principal"
     android:fillViewport="true">
 
@@ -15,16 +15,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
-
-        <TextView
-            style="@style/inputs2"
+        <ImageView
             android:id="@+id/text_user_label1"
+            style="@style/the_inputs"
+            android:src="@drawable/gato2"
             android:textAlignment="center"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="@id/editTextUserName1"
-            app:layout_constraintRight_toRightOf="@id/editTextUserName1"
-            android:text="@string/Formulario"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"/>
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/the_inputs"
